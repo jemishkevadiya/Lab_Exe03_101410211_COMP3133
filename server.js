@@ -9,7 +9,7 @@ app.use(express.json());
 
 connectDB();
 
-app.use("/api", restaurantRoutes);
+app.use("/", restaurantRoutes);
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
